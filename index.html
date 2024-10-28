@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEEDO</title>
+    <link rel="icon" href="Assets/SPEEDO.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+        .logo{
+            width:100px;
+            height: auto;
+        }
+        .nav-link{
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+        @keyframes fadeIn {
+         to {
+        opacity: 1;
+        }
+        }
+        @keyframes fadeOut {
+        to {
+        opacity: 1;
+        }
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 25vw;
+            height: 30vh;
+            perspective: 1000px; 
+        }
+        @media(max-width:576px){
+            .flip-card{
+                align-content: center;
+                width:25vw;
+                height:20vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #000000;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-back {
+            background-color: rgb(220, 230, 232);
+            color: rgb(0, 0, 0);
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-dark navbar-dark sticky-top" style="background-color:black;">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img class="logo" src="../Speedoo/Assets/SPEEDO2.png" alt="SPEEDO"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto d-flex gap-4">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../Speedoo/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Speedoo/details.html">Car details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Speedoo/reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../Speedoo/about us.html">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="image-container-fluid" style="position: relative; width:100%;">
+        <div class="img"  ><img src="../Speedoo/Assets/back.png" style="width:100%; height:auto; " ></div>
+        <div class="animated-text" style="font-size: 3vw; color: white; position: absolute;top: 85%; left: 60%; 
+        transform: translate(-15%, -100%);  text-align: center; font-weight:bolder;opacity: 0;
+        animation: fadeIn 4s forwards;animation: fadeOut 3s forwards;" >WELCOME TO SPEEDO...</div>
+    </div>
+    <br>
+    <br>
+   <hr class="line" style="color: #fff; ">
+    <div class="text" style="font-size: 2.7vw; color:#dcfcff;
+        text-align: center; font-weight:bolder;opacity: 0;
+        animation: fadeIn 4s forwards;animation: fadeOut 3s forwards;" >POPULAR HITS</div>
+    <hr class="line"style="color: #fff;">
+
+    <div class="container my-5">
+    <div class="row">
+      <!--1-->
+      <div class="col-lg-4 col-md-6 mr-sm-3 mb-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="../Speedoo/Assets/Land Cruisher 300 Series.png" style="width: 25vw; height: auto;" alt="Land Cruisher 300 Series">
+                  </div>
+                  <div class="flip-card-back">
+                      <h6>Land Cruisher 300 Series</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--2-->
+      <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="../Speedoo/Assets/Toyota CHR.png"style="width: 25vw; height: auto;" alt="Toyota C-HR">
+                  </div>
+                  <div class="flip-card-back">
+                      <h6>Toyota C-HR</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--3-->
+      <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="../Speedoo/Assets/Tesla-Model-Y-.jpg"style="width: 25vw; height: auto;" alt="Tesla Model Y">
+                  </div>
+                  <div class="flip-card-back">
+                      <h6>Tesla Model Y</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--4-->
+      <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="../Speedoo/Assets/Porsche Macan Electric.jpg"style="width: 25vw; height: auto;" alt="Porsche Macan Electric">
+                  </div>
+                  <div class="flip-card-back">
+                      <h6>Porsche Macan Electric</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--5-->
+      <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="../Speedoo/Assets/BYD ATTO 3.jpg"style="width: 25vw; height: auto;" alt="BYD ATTO 3">
+                  </div>
+                  <div class="flip-card-back">
+                      <h6>BYD ATTO 3</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--6-->
+      <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="../Speedoo/Assets/BMW 2 Series Coupe.png" style="width: 25vw; height: auto;" alt="BMW 2 Series Coupe">
+                  </div>
+                  <div class="flip-card-back">
+                      <h6>BMW 2 Series Coupe</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+<div class="row" style="background-color:rgb(35, 48, 52);margin: 5%;">
+    <div class="col-lg-6 col-md-6 "><img src="../Speedoo/Assets/SPEEDO2.png" alt="SPEEDO" class="fto" style="width: 45vw;padding:4%;"></div>
+    <div class="col-lg-6 col-md-6 " style=" width:40vw;padding: 3% 5%;justify-content: center;">
+        <p class="topic" style="color: #fff;font-size: 1.6vw;font-weight: 500;">Welcome to SPEEDO - Your Go-To Hub for Car Lovers</p>
+        <p class="topic-para" style="color: #fff; font-size: 1.3vw;">At SPEEDO, we bring you expert insights, the latest news,
+             and reviews on everything automotive.
+            From sleek designs to powerful engines, SPEEDO is your destination for discovering, comparing, and staying
+            updated on the world of cars. Let's dive into the future of speed together!</p>
+    </div>
+</div>
+<br>
+<hr class="line" style="color: #fff;width:90vw;margin-left: auto;margin-right: auto; ">
+<div>
+    <p class="text-center p-0.5" style="font-size: 1.5vw;color:#fff;font-weight: bold;">CONTACT US</p>
+    <p class="text-center p-0" style="font-size: 1.2vw;color:#fff;">Contact No : 070 1855 412
+        <br><a href="https://mail.google.com" style="text-decoration: none;color: #fff;">Email Address : speedo_vehicles@gmail.com</a>
+    </p>
+    
+        
+</div>
+<div>
+    <p class="text-center p-0.5" style="font-size: 1.5vw;color:#fff;font-weight: bold;">FOLLOW US ON</p>
+    <P class="text-center "><a href="https://www.instagram.com"><img src="../Speedoo/Assets/Insta.png" alt="Insta" style="width: 2vw;height: 2vw;"></a> 
+       <a href="https://www.facebook.com"><img src="../Speedoo/Assets/Fb.png" alt="Facebook" style="width: 2vw;height: 2vw;"></a>
+       <a href="https://www.twitter.com"><img src="../Speedoo/Assets/X.png" alt="X" style="width: 2vw;height: 2vw;"></a></P>
+
+</div>
+
+<hr class="line" style="color: #fff; ">
+    <div class="text-center p-2" style="font-size: 1vw;color: #fff;">
+       &copy; 2024 SPEEDO.All rights reserved.
+    </div>
+
+
+    
+
+
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+

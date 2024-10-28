@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    width:100px;
+    height: auto;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    color: #333;
+    animation: fadeUp 2s ease-in-out forwards;
+    padding-top: 0%;
+    padding-left: 2%;
+    padding-right:2%;
+}
+
+.cars4{
+    width:30vw;
+    height: auto;
+    padding:1vw;
+}
+
+.cars4-img{
+    width: 30vw;
+    height: auto;
+    animation: fadeUp 2s ease-in-out forwards;
+}
+.review{
+    width:50vw;
+    font-size: 1.2vw;
+    color: rgb(214, 247, 255);
+    padding: 3vw;
+    justify-content: baseline;
+}
+
+.your-review{
+    font-size: 1vw;
+    width: 60vw;
+    padding:0.8vw ;
+    margin-left:4vw;
+    margin-left: 5vw;
+    margin-top:0 ;
+    margin-bottom: 0.3vw;
+    animation: fadeUp 2s ease-in-out forwards;
+}
+.send{
+    font-size: 1.5vw;
+    margin-left:60vw;
+    border-radius: 2px;
+    margin-bottom: 2vw;
+    border: 1px solid  #000000;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    animation: fadeUp 2s ease-in-out forwards;
+    background-color: rgb(255, 255, 255);
+}
+
+#send{
+    color: black;
+    text-decoration: none;
+    animation: fadeUp 2s ease-in-out forwards;
+}

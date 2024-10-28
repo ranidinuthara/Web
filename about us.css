@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    width:100px;
+    height: auto;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team{
+    width: 30vw;
+    animation: fadeIn 4s forwards
+}
+.team-post{
+    width: 30vw;
+    animation: fadeIn 4s forwards
+}
+.team-img{
+    width: 20vw;
+    border-radius: 360px;
+    padding: 3vw;
+    animation: fadeIn 4s forwards
+}
+.post{
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    animation: fadeIn 4s forwards
+}
+.name{
+    color: rgb(163, 219, 226);
+    font-size:1.9vw ;
+    font-weight: 300;
+    animation: fadeIn 4s forwards
+}
